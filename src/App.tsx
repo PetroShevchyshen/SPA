@@ -1,7 +1,5 @@
 import "./App.css";
 
-function App() {
-  return <>S</>;
-}
-
-export default App;
+export const App = () => {
+  return <section>S</section>;
+};
