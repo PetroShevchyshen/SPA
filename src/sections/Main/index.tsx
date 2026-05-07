@@ -1,3 +1,9 @@
+import { MainAccordion } from "../../componnents/MainAccordion";
+
 export const Main = () => {
-  return <section className="h-screen">Main</section>;
+  return (
+    <section className="h-screen">
+      <MainAccordion />
+    </section>
+  );
 };
