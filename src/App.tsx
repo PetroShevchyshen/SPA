@@ -1,6 +1,7 @@
 import "./App.css";
 import { Footer } from "./componnents/Footer";
 import { Header } from "./componnents/Header/indext";
+import { Buros } from "./sections/Buros";
 import { Main } from "./sections/Main";
 import { Termin } from "./sections/Termin";
 import { Uber } from "./sections/Uber";
@@ -13,6 +14,7 @@ export const App = () => {
       <Main />
       <Webtools />
       <Uber />
+      <Buros />
       <Termin />
       <Footer />
     </section>
