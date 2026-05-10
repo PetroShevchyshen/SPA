@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { mainContent } from "../../const/mainContent";
 import ArrowLeftIcon from "../../assets/arrow-left.svg";
+import ArrowLeftIconWite from "../../assets/arrow-left-white.svg";
 import BgVideo from "../../assets/video/pexels-laura-tancredi-7065798.mp4";
 
 export const MainAccordion = () => {
@@ -54,7 +55,10 @@ export const MainAccordion = () => {
               <button className="font-semibold">{item.buttonText}</button>
 
               <p className="hidden group-hover:block">
-                <img src={ArrowLeftIcon} alt="Arrow left" />
+                <img
+                  src={`${i === 1 ? ArrowLeftIconWite : ArrowLeftIcon}`}
+                  alt="Arrow left"
+                />
               </p>
             </div>
           </div>
