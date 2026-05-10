@@ -1,6 +1,7 @@
 import { Slider } from "../../componnents/Slider";
 import ArrowLeftIcon from "../../assets/arrow-left.svg";
 import { realEstateItems } from "../../const/realEstate";
+import { RealEstaitItem } from "../../componnents/RealEstaitItem";
 
 export const RealEstate = () => {
   return (
@@ -10,14 +11,7 @@ export const RealEstate = () => {
       </h1>
       <Slider
         slides={realEstateItems.map((item) => (
-          <div key={item.address}>
-            <img src={item.photo} alt={item.title} />
-            <p className="mt-4 text-sm font-medium">{item.tag}</p>
-            <h3 className="mt-2 text-xl font-bold">{item.title}</h3>
-            <p className="mt-4 text-neutral-500">{item.address}</p>
-            <p className="text-neutral-500">{item.location}</p>
-            <p className="mt-6 font-bold">{item.price}</p>
-          </div>
+          <RealEstaitItem key={item.address} {...item} />
         ))}
       />
       <p className="flex justify-end items-center mt-4 gap-2 cursor-pointer pr-14">

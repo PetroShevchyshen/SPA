@@ -1,3 +1,4 @@
+import { FeedbackItem } from "../../componnents/FeedbackItem";
 import { Slider } from "../../componnents/Slider";
 import { feedbackItems } from "../../const/feedback";
 
@@ -12,13 +13,7 @@ export const Feedback = () => {
       <Slider
         slidesPerView={2}
         slides={feedbackItems.map((item) => (
-          <div>
-            <p className="text-lg leading-[1.4]">{item.text}</p>
-            <div className="mt-10">
-              <h3 className="text-2xl font-bold">{item.name}</h3>
-              <p className="mt-2 font-semibold">{item.position}</p>
-            </div>
-          </div>
+          <FeedbackItem key={item.name} {...item} />
         ))}
       />
     </section>
