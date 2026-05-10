@@ -2,6 +2,7 @@ import "./App.css";
 import { Footer } from "./componnents/Footer";
 import { Header } from "./componnents/Header/indext";
 import { Buros } from "./sections/Buros";
+import { Feedback } from "./sections/Feedback";
 import { Main } from "./sections/Main";
 import { RealEstate } from "./sections/RealEstate";
 import { Referense } from "./sections/Referense";
@@ -18,6 +19,7 @@ export const App = () => {
       <Referense />
       <Uber />
       <RealEstate />
+      <Feedback />
       <Buros />
       <Termin />
       <Footer />
